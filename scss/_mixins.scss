@@ -1,0 +1,28 @@
+@mixin flex {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+}
+
+@mixin limitScreenForMobile {
+    @media screen and (min-width: 460px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+
+@mixin textColor($color, $textShadow){
+    color: $color;
+    text-shadow: -1px -1px 0 $textShadow,-1px 1px 0 $textShadow,1px -1px 0 $textShadow,1px 1px 0 $textShadow, 0 0 10px $textShadow;
+}
