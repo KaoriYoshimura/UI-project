@@ -42,7 +42,7 @@
 
           <div class="dryck-back">
               <div class="dryck">
-                  <a href="#" class="animsition-link" aria-label="Gå till dryck meny sida">
+                  <a href="#" class="animsition-link">
                     Dryck<br />
                   <i class="fas fa-arrow-right" aria-hidden="true"></i>
                   </a>
@@ -51,7 +51,7 @@
 
           <div class="meny-back">
               <div class="meny">
-                  <a href="#" class="animsition-link" aria-label="Gå till mat meny sida">
+                  <a href="#" class="animsition-link">
                     Meny<br />
                   <i class="fas fa-arrow-left" aria-hidden="true"></i>
                   </a>
@@ -153,22 +153,6 @@
             window.location.href = url;
           }
         });
-
-          var ht= $("#logo").height(),
-          wd=$("#logo").width(),
-          mult=1.5;
-
-          $("#logo").on('mouseenter', function(){
-          $(this).animate({height: ht*mult,
-          width: wd*mult}, 500);
-          });
-          $("#logo").on('mouseleave', function(){
-          $(this).animate({height: ht,
-          width: wd}, 500);
-          })
-
-
-
 
       });
     </script>
